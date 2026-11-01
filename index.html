@@ -1,0 +1,161 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+
+    <title>Frontend Mentor | Social links profile</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      @font-face {
+        font-family: "Inter";
+        src: url("./assets/fonts/Inter-VariableFont_slnt,wght.ttf")
+          format("truetype");
+        font-weight: 100 900;
+        font-style: normal;
+        font-display: swap;
+      }
+      .attribution {
+        font-size: 0.6875rem;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+      body {
+        display: flex; 
+        min-height: 100svh;
+        align-content: center;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color: hsl(0, 0%, 8%);
+        font-family: "Inter";
+      }
+      .container {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        align-content: center;
+        justify-content: center;
+        width: 100%;
+      }
+      .social-container {
+        width: 100%;
+        max-width: 384px;
+        background-color: hsl(0, 0%, 12%);
+        padding: 24px;
+        border-radius: 12px; 
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        margin: 0 10px 0 10px;
+      }
+      .profile-image {
+        width: 88px;
+        height: 88px;
+        border-radius: 50%;
+        margin-bottom: 16px;
+      }
+      .white-color {
+        color: white;
+      }
+      .username {
+        font-size: 24px;
+        margin: 0;
+        line-height: 1.2;
+      }
+      .location {
+        font-size: 14px;
+        color: hsl(75, 94%, 57%);
+        font-weight: 600;
+        font-style: normal;
+        margin: 0;
+      }
+      .description {
+        font-size: 14px;
+        color: white;
+        font-weight: 200;
+        line-height: 1.4;
+      }
+      .margin-top {
+        margin-top: 10px;
+      }
+      .social-container > nav {
+        width: 100%;
+      }
+      .social-links {
+        list-style: none;
+        width: 100%;;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+      }
+      .social-links li { 
+        width: 100%;
+      }
+      .button {
+        display: block;
+        background-color: hsl(0, 0%, 20%);
+        padding: 12px 0 12px 0;
+        border-radius: 8px;
+        color: white;
+        width: 100%;
+        text-align: center;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+      }
+      .button:hover,
+      .button:focus-visible {
+        background-color: hsl(75, 94%, 57%);
+        color: hsl(0, 0%, 8%);
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <main class="social-container">
+        <img
+          class="profile-image"
+          alt="Jessica Randall's profile picture"
+          src="assets/images/avatar-jessica.jpeg" 
+        />
+        <h1 class="username white-color">Jessica Randall</h1>
+        <address class="location white-color">London, United Kingdom</address>
+        <p class="description margin-top">
+          "Front-end developer and avid reader."
+        </p>
+        <nav>
+          <ul class="social-links">
+            <li><a class="button" href="#">GitHub</a></li>
+            <li><a class="button" href="#">Frontend Mentor</a></li>
+            <li><a class="button" href="#">LinkedIn</a></li>
+            <li><a class="button" href="#">Twitter</a></li>
+            <li><a class="button" href="#">Instagram</a></li>
+          </ul>
+        </nav>
+      </main>
+    </div>
+
+    <footer class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge">Frontend Mentor</a>.
+      Coded by <a href="#">Edris Mazhari</a>.
+    </footer>
+  </body>
+</html>
